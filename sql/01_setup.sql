@@ -26,7 +26,7 @@ CREATE TABLE employees
 CREATE TABLE projects
 (
     PROJECT_ID VARCHAR(6) PRIMARY KEY NOT NULL,
-    ADMINISTRATOR_ID VARCHAR(6) NOT NULL,
+    ADMINISTER_ID VARCHAR(6) NOT NULL,
     PROJECT_NAME VARCHAR(20) NOT NULL,
     START_DATE DATE NOT NULL,
     END_DATE DATE NOT NULL,
@@ -39,11 +39,11 @@ CREATE TABLE projects
 -- Create below: Table `proj`.`administers`
 -- -----------------------------------------------------
 
-CREATE TABLE administrators
+CREATE TABLE administers
 (
-    ADMINISTRATOR_ID VARCHAR(6) PRIMARY KEY NOT NULL,
+    ADMINISTER_ID VARCHAR(6) PRIMARY KEY NOT NULL,
     SUBCOMPANY_ID VARCHAR(6) NOT NULL,
-    ADMINISTRATOR_NAME VARCHAR(20) NOT NULL
+    ADMINISTER_NAME VARCHAR(20) NOT NULL
 );
 
 -- -----------------------------------------------------
